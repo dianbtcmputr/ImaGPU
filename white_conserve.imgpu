@@ -1,0 +1,9 @@
+{
+  "sizer": "ig_OutSize = ig_InSize;",
+  "pixer": "vec4 pix = igGetPix(ig_Position);\nvec4 ref = igRefPix(ig_Position);\nif (ref.r > 0.5) { ig_PixColor = pix; }\nelse {ig_PixColor = vec4(0.0); }",
+  "params": {},
+  "boundary": [
+    "Clamp",
+    "Clamp"
+  ]
+}
